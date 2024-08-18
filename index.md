@@ -25,16 +25,19 @@ For this project, we used the "Hate Speech and Offensive Language Dataset" avail
 Before diving into model training, it was essential to understand the data. We conducted an extensive Exploratory Data Analysis (EDA) to examine the distribution of classes and the common words associated with each class. This step helped us gain insights into the characteristics of hate speech and offensive language.
 
 **Class Distribution**
+
 We studied the class distribution for three different classes present in the dataset which are shown in the figure below.
 
 ![Image](https://github.com/women-in-ai-ireland/June-2024-Group-003/blob/WAI_blog/images/class_dis_1.png)
 
 **Common Words Analysis**
+
 Additionally, the dataset exhibited extensive overlap in the words contained in three categories as shown below. **WARNING: offensive language**
 
 ADD WORD CLOUD
 
 **Additional Data Augmentation**
+
 The existing dataset clearly showed bias towards the offensive/hate tweets and we decided to remedy that by augmenting with another dataset. In addition to that, we decided to build a binary classifier and merged the hate and offensive tweets into one class.
 
 The second dataset used was titled "Twitter Tweets Sentiment Data" and is available on [Kaggle](https://www.kaggle.com/datasets/yasserh/twitter-tweets-sentiment-dataset). This dataset had 'positive', 'neutral' and 'negative' tweets. We only retained the 'positive' and 'neutral' tweets to mitigate the class imbalance in our original dataset as 'negative' label data can be construed as offensive. 
@@ -52,14 +55,17 @@ ADD WORD CLOUD, FREQUENCY ANALYSIS PLOT AND MOST COMMON WORDS AFTER CLEANING
 #### 3. Traditional Machine Learning Approach
 
 **Bag of Words**
+
 Bag of Words (BoW) is one of the simplest methods of text representation in NLP. It converts text into a fixed-length vector of word occurrences, ignoring grammar and word order but capturing the frequency of individual words. Each word in a document is represented by its frequency or presence/absence.
 
 **Term Frequency-Inverse Document Frequency**
+
 TF-IDF is an extension of BoW that not only accounts for word frequency (Term Frequency, TF) but also considers how common or rare a word is across the entire dataset (Inverse Document Frequency, IDF). Words that are common across many documents (e.g., "the", "and") are down-weighted, while rare but important words get higher weights.
 
 TF-IDF values adjust the word frequencies so that commonly used words in all documents are less impactful. This method helps in reducing the weight of commonly occurring words, giving more importance to rare but significant terms.
 
 **Logistic Regression with BoW and TF-IDF**
+
 As a baseline, we implemented Logistic Regression, a traditional machine learning approach, using both Bag of Words and TF-IDF. These methods are simple yet effective for binary classification tasks. After vectorizing the text data, we trained a Logistic Regression model to classify tweets.
 
 This approach provided a solid foundation and baseline accuracy, helping us understand the complexity of the task and the need for more advanced models.
@@ -67,6 +73,7 @@ This approach provided a solid foundation and baseline accuracy, helping us unde
 #### 4. Advanced Model Deployment
 
 **BERT Fine-Tuning**
+
 **BERT (Bidirectional Encoder Representations from Transformers)** is a revolutionary model in NLP, developed by Google. Unlike traditional models that process text sequentially, BERT reads text bidirectionally. This means it considers the context of a word based on the words that come before and after it, allowing BERT to understand the nuances and context of language far better than previous models.
 
 **How BERT Works:**
@@ -77,7 +84,7 @@ This approach provided a solid foundation and baseline accuracy, helping us unde
 
 INSERT BERT ARCHITECTURE ILLUSTRATION
 
-We fine-tuned a pre-trained BERT model on our dataset. BERT's ability to understand the context within text made it an excellent choice for this task. After training, the BERT model provided predictions that were directly compared to the Logistic Regression outputs to assess the performance improvement.
+We built **our model using BERT-base-uncased model with an additional classification layer**. BERT's ability to understand the context within text made it an excellent choice for this task. After training, the BERT model provided predictions that were directly compared to the Logistic Regression outputs to assess the performance improvement.
 
 #### 5. Model Evaluation
 
