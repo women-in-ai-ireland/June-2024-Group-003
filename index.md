@@ -83,8 +83,6 @@ This approach provided a solid foundation and baseline accuracy, helping us unde
 
 **Fine-tuning:** For specific tasks like hate speech detection, BERT can be fine-tuned on a smaller, task-specific dataset. During fine-tuning, BERT adjusts its parameters to better understand the nuances of the task at hand, such as identifying hate speech based on its training.
 
-INSERT BERT ARCHITECTURE ILLUSTRATION
-
 We built **our model using BERT-base-uncased model with an additional classification layer**. BERT's ability to understand the context within text made it an excellent choice for this task. After training, the BERT model provided predictions that were directly compared to the Logistic Regression outputs to assess the performance improvement.
 
 #### 5. Model Evaluation
