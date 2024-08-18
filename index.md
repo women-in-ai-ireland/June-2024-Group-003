@@ -17,7 +17,7 @@ The primary goal of this project is to develop an AI-driven system capable of ac
 
 ### Dataset
 
-For this project, we used the "Hate Speech and Offensive Language Dataset" available on [Kaggle](https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset). This dataset contains **24,783 tweets labeled as "hate speech(represented as 0)," "offensive language(respresented as 1)," or "neither(represenred as 2)"**. 
+For this project, we used the "Hate Speech and Offensive Language Dataset" available on [Kaggle](https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset). This dataset contains **24,783 tweets labeled as "hate speech(represented as 0)," "offensive language(respresented as 1)," or "neither(represented as 2)"**. 
 
 ### Methodology
 
