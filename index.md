@@ -7,7 +7,7 @@ layout: default
 
 ## Introduction
 
-n recent years, the proliferation of hate speech on social media platforms has become a significant concern. Detecting and mitigating such harmful content is crucial for maintaining a healthy online environment. With advancements in AI, particularly in Natural Language Processing (NLP), it's possible to automate the detection of hate speech with high accuracy. In this project, we explore multiple approaches, including traditional machine learning techniques like Bag of Words and TF-IDF with Logistic Regression, as well as advanced models like BERT, to build a robust system for hate speech detection.
+In recent years, the proliferation of hate speech on social media platforms has become a significant concern. Detecting and mitigating such harmful content is crucial for maintaining a healthy online environment. With advancements in AI, particularly in Natural Language Processing (NLP), it's possible to automate the detection of hate speech with high accuracy. In this project, we explore multiple approaches, including traditional machine learning techniques like Bag of Words and TF-IDF with Logistic Regression, as well as advanced models like BERT, to build a robust system for hate speech detection.
 
 ## Project Overview
 
