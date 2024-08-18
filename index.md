@@ -21,7 +21,7 @@ For this project, we used the "Hate Speech and Offensive Language Dataset" avail
 
 ### Methodology
 
-#### 1. Explorartory Daat Analysis(EDA)
+#### 1. Exploratory Data Analysis(EDA)
 Before diving into model training, it was essential to understand the data. We conducted an extensive Exploratory Data Analysis (EDA) to examine the distribution of classes and the common words associated with each class. This step helped us gain insights into the characteristics of hate speech and offensive language.
 
 **Class Distribution**
