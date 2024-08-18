@@ -50,7 +50,8 @@ To ensure our models could focus on the relevant content, we implemented several
   
 *  **Tokenization and Lemmatization:** Converted text into tokens and applied lemmatization to reduce words to their base forms, enhancing the model's ability to generalize.
 
-ADD WORD CLOUD, FREQUENCY ANALYSIS PLOT AND MOST COMMON WORDS AFTER CLEANING
+The figure below shows the word cloud from the combined and cleaned dataset. 
+![Image](https://github.com/women-in-ai-ireland/June-2024-Group-003/blob/WAI_blog/images/word_cloud_clean.png)
 
 #### 3. Traditional Machine Learning Approach
 
