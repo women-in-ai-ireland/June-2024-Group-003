@@ -96,6 +96,12 @@ When tested on the Ethos dataset, the performance of both models dropped signifi
 
 This step was crucial in understanding the effectiveness of our approaches and identifying areas for further improvement.
 
+#### 6. Streamlit Dashboard
+
+As part of the project, we also developed a user-friendly Streamlit dashboard that allows users to input text and receive an immediate classification on whether the text is offensive or not. This interactive tool showcases the practical application of our model, making it accessible for real-time hate speech detection. Users can simply enter a piece of text, and the dashboard will provide a classification output, indicating if the content is classified as offensive or not offensive. The dashboard integrates the trained model's predictions, offering an intuitive interface for both technical and non-technical users to engage with the AI system and understand its capabilities.
+
+ADD PIC OF DASHBOARD
+
 ### Results and Discussion
 
 Our experiments demonstrated that while advanced models like BERT hold promise, traditional methods like Logistic Regression can perform equally well in certain scenarios. This finding suggests that for tasks with limited or imbalanced data, simpler models may be just as effective, if not more practical, due to their lower computational costs and ease of implementation. The significant drop in performance on the external Ethos dataset also underscores the importance of testing models on varied datasets to ensure their robustness and generalizability.
