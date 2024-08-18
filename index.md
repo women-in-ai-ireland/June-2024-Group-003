@@ -34,7 +34,7 @@ We studied the class distribution for three different classes present in the dat
 
 Additionally, the dataset exhibited extensive overlap in the words contained in three categories as shown below. **WARNING: offensive language**
 
-ADD WORD CLOUD
+![Image](https://github.com/women-in-ai-ireland/June-2024-Group-003/blob/WAI_blog/images/word_cloud_1.png)
 
 **Additional Data Augmentation**
 
@@ -88,11 +88,15 @@ We built **our model using BERT-base-uncased model with an additional classifica
 
 #### 5. Model Evaluation
 
-We evaluated each model on a validation set drawn from our dataset. The Logistic Regression and BERT models both achieved an impressive performance, with around 98% accuracy on this internal validation set. However, our results showed that BERT's performance was similar to that of the Logistic Regression model. This outcome suggests that the complexities of our dataset, or perhaps its size and balance, limited the potential gains from using such an advanced model.
+We evaluated each model on a validation set drawn from our dataset. The Logistic Regression and BERT models both achieved an impressive performance, with around ~98-99% accuracy on this internal validation set; as shown in the table below. However, our results showed that BERT's performance was similar to that of the Logistic Regression model. This outcome suggests that the complexities of our dataset, or perhaps its size and balance, limited the potential gains from using such an advanced model.
+
+![Image](https://github.com/women-in-ai-ireland/June-2024-Group-003/blob/WAI_blog/images/results_val.png)
 
 We also assessed the generalizability of our models by testing theme on an external dataset, the [Ethos Binary Dataset](https://huggingface.co/datasets/iamollas/ethos) from Hugging Face, which contains text labeled as either hate speech or not.
 
-When tested on the Ethos dataset, the performance of both models dropped significantly, with accuracy decreasing to around 65%. This substantial drop highlights the challenge of deploying models trained on one dataset to a different one, especially in the nuanced task of hate speech detection where context and phrasing can vary widely.
+When tested on the Ethos dataset, the performance of both models dropped significantly, with accuracy decreasing to around 65-67%. The results are shown in the table below. This substantial drop highlights the challenge of deploying models trained on one dataset to a different one, especially in the nuanced task of hate speech detection where context and phrasing can vary widely.
+
+![Image](https://github.com/women-in-ai-ireland/June-2024-Group-003/blob/WAI_blog/images/results_ethos.png)
 
 This step was crucial in understanding the effectiveness of our approaches and identifying areas for further improvement.
 
@@ -100,7 +104,7 @@ This step was crucial in understanding the effectiveness of our approaches and i
 
 As part of the project, we also developed a user-friendly Streamlit dashboard that allows users to input text and receive an immediate classification on whether the text is offensive or not. This interactive tool showcases the practical application of our model, making it accessible for real-time hate speech detection. Users can simply enter a piece of text, and the dashboard will provide a classification output, indicating if the content is classified as offensive or not offensive. The dashboard integrates the trained model's predictions, offering an intuitive interface for both technical and non-technical users to engage with the AI system and understand its capabilities.
 
-ADD PIC OF DASHBOARD
+![Image](https://github.com/women-in-ai-ireland/June-2024-Group-003/blob/WAI_blog/images/Dashboard.png)
 
 ### Results and Discussion
 
